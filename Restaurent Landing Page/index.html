@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Daily Delight</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+
+ <!-- Navigation -->
+ <nav>
+    <div class="logo">
+        <img src="https://static.vecteezy.com/system/resources/previews/012/482/101/non_2x/initial-ee-letter-royal-luxury-logo-template-in-art-for-restaurant-royalty-boutique-cafe-hotel-heraldic-jewelry-fashion-and-other-illustration-vector.jpg" alt="Logo" class="logo-img">
+        <span> Daily Delight </span>
+    </div>
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#reservation">Reservation</a></li>
+        <li><a href="#location">Location</a></li>
+        <li><a href="#blog">Blog</a></li>
+    </ul>
+</nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="overlay"></div>
+        <h1>Welcome to Daily Delight </h1>
+        <p>Experience fine dining like never before.</p>
+      </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>Daily Delight offers a unique culinary experience with a blend of traditional and modern flavors.
+            A well-structured restaurant description should include a clear and concise overview of your establishment, including your restaurant's name, location, and contact information. It should also highlight your key selling points, such as your menu items, culinary techniques, and inviting atmosphere.
+            They ate in an Italian restaurant in Forth Street. We had dinner in the hotel's restaurant. The restaurant serves breakfast, lunch, and dinner. The food at the restaurant was good and the waiters were polite.
+
+        </p>
+    </section>
+
+   <!-- Menu Section -->
+<section id="menu" class="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-filters">
+        <button onclick="filterMenu('all')">All</button>
+        <button onclick="filterMenu('vegetarian')">Vegetarian</button>
+        <button onclick="filterMenu('non-vegetarian')">Non-Vegetarian</button>
+        <button onclick="filterMenu('special')">Specials</button>
+    </div>
+    <div class="menu-items">
+
+        <!-- Vegetarian Items -->
+        <div class="menu-item vegetarian">
+            <img src="https://vegecravings.com/wp-content/uploads/2017/03/Aloo-Samosa-Recipe-Step-By-Step-Instructions.jpg" alt="Paneer Butter Masala">
+            <h3>Paneer Butter Masala</h3>
+            <p class="price">₹220</p>
+            <p>Cottage cheese cubes in a creamy tomato gravy.</p>
+        </div>
+        <div class="menu-item vegetarian">
+            <img src="https://i.ytimg.com/vi/4vKiaay10EQ/maxresdefault.jpg" alt="Veg Spring Rolls">
+            <h3>Veg Spring Rolls</h3>
+            <p class="price">₹150</p>
+            <p>Crispy rolls stuffed with seasoned vegetables.</p>
+        </div>
+        <div class="menu-item vegetarian">
+            <img src="https://i.ytimg.com/vi/Do7ZdUodDdw/maxresdefault.jpg" alt="Veg Biryani">
+            <h3>Veg Biryani</h3>
+            <p class="price">₹180</p>
+            <p>Fragrant rice cooked with vegetables and spices.</p>
+        </div>
+        <div class="menu-item vegetarian">
+            <img src="https://t3.ftcdn.net/jpg/15/27/87/44/360_F_1527874459_eGIlhWtx8Y1S6QQ70xmUqeo1p1KIRNsc.jpg" alt="Chole Bhature">
+            <h3>Chole Bhature</h3>
+            <p class="price">₹160</p>
+            <p>Spicy chickpeas served with fluffy fried bread.</p>
+        </div>
+
+        <!-- Non-Vegetarian Items -->
+        <div class="menu-item non-vegetarian">
+            <img src="https://i.ytimg.com/vi/pt2Q5Wbz1dU/maxresdefault.jpg" alt="Chicken Tikka">
+            <h3>Chicken Tikka</h3>
+            <p class="price">₹260</p>
+            <p>Grilled chicken marinated in yogurt and spices.</p>
+        </div>
+        <div class="menu-item non-vegetarian">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFCRWX5nOimL5gkfFIjueNL82JKXWNbEghKw&s" alt="Butter Chicken">
+            <h3>Butter Chicken</h3>
+            <p class="price">₹280</p>
+            <p>Rich and creamy tomato-based chicken curry.</p>
+        </div>
+        <div class="menu-item non-vegetarian">
+            <img src="https://i.ytimg.com/vi/ZqkcrV326WY/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAip-TOl9jJKv0sUy71i5wku8GFqQ" alt="Fish Curry">
+            <h3>Fish Curry</h3>
+            <p class="price">₹240</p>
+            <p>Traditional coastal curry made with fresh fish.</p>
+        </div>
+        <div class="menu-item non-vegetarian">
+            <img src="https://khinskitchen.com/wp-content/uploads/2024/03/chicken-kebab-04.jpg" alt="Chicken Kebab">
+            <h3>Chicken Kebab</h3>
+            <p class="price">₹200</p>
+            <p>Chargrilled minced chicken skewers with spices.</p>
+        </div>
+
+        <!-- Special Items -->
+        <div class="menu-item special">
+            <img src="https://media.olivegarden.com/en_us/images/marketing/Shrimp-Scampi-Dinner-dpv-1180x730.jpg" alt="Shrimp Scampi">
+            <h3>Shrimp Scampi</h3>
+            <p class="price">₹350</p>
+            <p>Sautéed shrimp in garlic butter with pasta.</p>
+        </div>
+        <div class="menu-item special">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmKI3506-fAA6QKHSSErVoYiZtP3gX3IXSMQ&s" alt="Truffle Mac & Cheese">
+            <h3>Truffle Mac & Cheese</h3>
+            <p class="price">₹320</p>
+            <p>Macaroni in cheese sauce topped with truffle oil.</p>
+        </div>
+        <div class="menu-item special">
+            <img src="https://www.spicebangla.com/wp-content/uploads/2024/08/Spicy-Pasta-recipe-optimised-scaled.webp" alt="Chef's Special Pasta">
+            <h3>Chef's Special Pasta</h3>
+            <p class="price">₹300</p>
+            <p>Handmade pasta tossed with seasonal herbs & sauce.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Gallery Section -->
+<section id="gallery" class="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-images">
+        <img src="https://img.freepik.com/premium-photo/juicy-tandoori-paneer-tikka-best-indian-fast-food-paneer-tikka-picture-photography_1020697-119066.jpg" alt="Tandoori Paneer Tikka">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqco3Z1-FlDn7o8WIVeBMA1R9-seJCKY35ZQ&s.jpg" alt="Starter Dish">
+        <img src="https://images.ctfassets.net/0dkgxhks0leg/2W0e0i39df3qb9O05tsm8W/877bbaef4e6158eef162496144faf2f5/TF_20FW_22_20Dessert_20Collection_498.jpg" alt="Dessert">
+        <img src="https://sprinteriors.com/uploads/blog/1683699728_image.jpg" alt="Restaurant Interior">
+        <img src="https://i.ytimg.com/vi/4vKiaay10EQ/maxresdefault.jpg" alt="Spring Rolls">
+        <img src="https://vegecravings.com/wp-content/uploads/2017/03/Aloo-Samosa-Recipe-Step-By-Step-Instructions.jpg" alt="Samosa">
+        <img src="https://i.ytimg.com/vi/pt2Q5Wbz1dU/maxresdefault.jpg" alt="Chicken Tikka">
+        <img src="https://www.awesomecuisine.com/wp-content/uploads/2018/07/cabbage_manchurian_dry.jpg" alt="Manchurian">
+        <img src="https://khinskitchen.com/wp-content/uploads/2024/03/chicken-kebab-04.jpg" alt="Kebab">
+    </div>
+</section>
+
+
+<!-- Reservation Section -->
+<section id="reservation" class="reservation">
+    <h2>Book a Table</h2>
+    <form id="reservation-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+        <input type="date" name="date" required>
+        <input type="time" name="time" required>
+        <input type="number" name="guests" placeholder="Number of Guests" required>
+
+        <!-- Veg/Non-Veg selection -->
+        <div class="form-box">
+            <select name="meal_type" id="meal-type" required>
+                <option value="">-- Select Meal Preference --</option>
+                <option value="veg">Vegetarian</option>
+                <option value="non-veg">Non-Vegetarian</option>
+            </select>
+        </div>
+
+        <!-- Submit button -->
+        <div class="form-box">
+            <button type="submit">Reserve Now</button>
+        </div>
+    </form>
+
+    <!-- Confirmation message -->
+    <div id="confirmation-message">
+        <p>✅ Thank you! Your reservation has been received.</p>
+    </div>
+</section>
+
+
+    <!-- Location Section -->
+<section id="location" class="location">
+    <h2>Our Location</h2>
+    <p>Vijayawada, Eat Street, Andhra Pradesh, India</p>
+
+    <!-- Map Container -->
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18..." 
+            width="200%" 
+            height="350" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+    </div>
+</section>
+
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <h2>Latest from Our Blog</h2>
+        <article>
+            <h3>The Art of Fine Dining</h3>
+            <p>Explore the nuances that make dining an art form... This style, inspired by Henri Matisse and other artists, is a way for restaurants to express an artsy, imaginative, and handmade feel without explicitly stating it. It's seen as a departure from more traditional design choices like reclaimed wood and subway tile
+            </p>
+            <a href="#">Read More</a>
+        </article>
+        <!-- Add more blog posts as needed -->
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-media">
+            <a href="https://facebook.com/eleganteats" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com/eleganteats" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/eleganteats" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>&copy; 2025 Elegant Eats. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for interactivity -->
+    <script src="script.js"></script>
+</body>
+</html>
